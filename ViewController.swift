@@ -31,6 +31,7 @@ class ViewController: UIViewController
         }
         view.backgroundColor = createRandomColor()
         firstButton.setTitleColor (createRandomColor(), for: .normal)
+        firstButton.backgroundColor = createRandomColor()
     }
     
     private func createRandomColor() -> UIColor
