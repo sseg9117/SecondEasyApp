@@ -100,6 +100,7 @@
                                 <state key="normal" title="imageButton"/>
                                 <connections>
                                     <action selector="ButtonTwo:" destination="zwB-ic-zER" eventType="touchUpInside" id="BSJ-qH-Cqc"/>
+                                    <action selector="changePicture:" destination="Mx0-Wv-18o" eventType="touchUpInside" id="j4s-dc-EyF"/>
                                     <action selector="imageButton:" destination="Mx0-Wv-18o" eventType="touchUpInside" id="dOX-9k-zmO"/>
                                     <segue destination="ubO-U0-usf" kind="show" id="RHe-xn-sFn"/>
                                 </connections>

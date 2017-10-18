@@ -10,13 +10,14 @@ import UIKit
 
 class ViewController: UIViewController
     {
+    private var imageCounter : Int = 0
     @IBOutlet weak var imageFrame: UIImageView!
     @IBOutlet weak var soundSlider: UISlider!
     @IBOutlet weak var imageButton: UIButton!
     @IBOutlet weak var soundButton: UIButton!
     @IBOutlet weak var firstButton:UIButton!
     
-    @IBAction func imageButton() -> Void
+    @IBAction func changePicture(_ sender: UIButton)
     {
         switchImage()
     }
@@ -71,7 +72,7 @@ class ViewController: UIViewController
         }
         if (imageCounter == 0)
         {
-            imageFrame.image = UImage(named: " image 1. ")
+            imageFrame.image = UIImage(named: " lel ")
         }
         else if (imageCounter == 1 )
         {
