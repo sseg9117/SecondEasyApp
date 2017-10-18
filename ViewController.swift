@@ -17,10 +17,6 @@ class ViewController: UIViewController
     @IBOutlet weak var soundButton: UIButton!
     @IBOutlet weak var firstButton:UIButton!
     
-    @IBAction func changePicture(_ sender: UIButton)
-    {
-        switchImage()
-    }
     override func viewDidLoad()
     {
         super.viewDidLoad()
@@ -54,10 +50,12 @@ class ViewController: UIViewController
         
         return newColor
     }
-    @IBAction func soundButton(_ sender: UIButton) {
+    @IBAction func soundButton(_ sender: UIButton)
+    {
     }
-    
-    @IBAction func imageButton(_ sender: UIButton) {
+    @IBAction func changePicture(_ sender: UIButton)
+    {
+        switchImage()
     }
     override func didReceiveMemoryWarning()
     {

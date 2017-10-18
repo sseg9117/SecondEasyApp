@@ -105,17 +105,25 @@
                                     <segue destination="DQM-5F-Po2" kind="show" id="sRW-pY-f77"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iyx-LA-1RQ">
-                                <rect key="frame" x="127" y="360" width="120" height="58"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="APi-7a-ru1">
+                                <rect key="frame" x="127" y="360" width="104" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="change Picture"/>
-                                <connections>
-                                    <action selector="ButtonTwo:" destination="zwB-ic-zER" eventType="touchUpInside" id="BSJ-qH-Cqc"/>
-                                    <action selector="changePicture:" destination="Mx0-Wv-18o" eventType="touchUpInside" id="j4s-dc-EyF"/>
-                                    <action selector="imageButton:" destination="Mx0-Wv-18o" eventType="touchUpInside" id="dOX-9k-zmO"/>
-                                    <segue destination="ubO-U0-usf" kind="show" id="RHe-xn-sFn"/>
-                                </connections>
-                            </button>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="5FN-oI-o4A">
+                                        <rect key="frame" x="0.0" y="0.0" width="104" height="30"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iyx-LA-1RQ">
+                                                <rect key="frame" x="0.0" y="0.0" width="104" height="30"/>
+                                                <state key="normal" title="change Picture"/>
+                                                <connections>
+                                                    <action selector="changePicture:" destination="Mx0-Wv-18o" eventType="touchUpInside" id="r4B-Vc-Tdb"/>
+                                                    <segue destination="ubO-U0-usf" kind="show" id="RHe-xn-sFn"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
                             <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="Uc0-GC-dev">
                                 <rect key="frame" x="128" y="522" width="118" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
