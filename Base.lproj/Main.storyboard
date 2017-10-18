@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -32,6 +32,7 @@
                                 </state>
                                 <connections>
                                     <action selector="firstMethod:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZVP-sg-Kwk"/>
+                                    <segue destination="Mx0-Wv-18o" kind="show" id="okR-DM-9yn"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -43,7 +44,103 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="24.800000000000001" y="36.431784107946029"/>
+            <point key="canvasLocation" x="-551" y="-371"/>
+        </scene>
+        <!--Second Page View Controller-->
+        <scene sceneID="ncb-Y1-7Pq">
+            <objects>
+                <viewController id="ubO-U0-usf" customClass="SecondPageViewController" customModule="SecondEasyApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="1nn-cN-sj6"/>
+                        <viewControllerLayoutGuide type="bottom" id="iod-gG-EBW"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="zIz-Z5-5Wq">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="K0f-hM-6dF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="409" y="420"/>
+        </scene>
+        <!--Third View Controller-->
+        <scene sceneID="PjL-yz-ryy">
+            <objects>
+                <viewController id="DQM-5F-Po2" customClass="ThirdViewController" customModule="SecondEasyApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="NRe-Sd-lBV"/>
+                        <viewControllerLayoutGuide type="bottom" id="cDv-8g-QdB"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="uJR-ya-z3v">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2kq-KW-W4V" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1399" y="420"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="H5a-S6-Lu2">
+            <objects>
+                <viewController id="Mx0-Wv-18o" customClass="ViewController" customModule="SecondEasyApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="2tJ-BK-2mi"/>
+                        <viewControllerLayoutGuide type="bottom" id="0fB-GC-9Rr"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="3Jb-6m-uQI">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iyx-LA-1RQ">
+                                <rect key="frame" x="127" y="304" width="120" height="58"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="imageButton"/>
+                                <connections>
+                                    <action selector="ButtonTwo:" destination="zwB-ic-zER" eventType="touchUpInside" id="BSJ-qH-Cqc"/>
+                                    <action selector="imageButton:" destination="Mx0-Wv-18o" eventType="touchUpInside" id="dOX-9k-zmO"/>
+                                    <segue destination="ubO-U0-usf" kind="show" id="RHe-xn-sFn"/>
+                                </connections>
+                            </button>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="Uc0-GC-dev">
+                                <rect key="frame" x="128" y="426" width="118" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="SliderOne:" destination="zwB-ic-zER" eventType="valueChanged" id="WmE-96-NzL"/>
+                                    <action selector="soundSlider:" destination="Mx0-Wv-18o" eventType="valueChanged" id="yi8-EX-FHW"/>
+                                </connections>
+                            </slider>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="J2w-PR-n1j">
+                                <rect key="frame" x="67" y="20" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ink-8F-SRD">
+                                <rect key="frame" x="134" y="200" width="106" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="soundButton"/>
+                                <connections>
+                                    <action selector="ButtonOne:" destination="zwB-ic-zER" eventType="touchUpInside" id="on3-cN-cEc"/>
+                                    <action selector="asdf:" destination="Mx0-Wv-18o" eventType="touchUpInside" id="l6g-s8-HzP"/>
+                                    <action selector="soundButton:" destination="Mx0-Wv-18o" eventType="touchUpInside" id="kkO-qf-6ob"/>
+                                    <segue destination="DQM-5F-Po2" kind="show" id="sRW-pY-f77"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="imageButton" destination="iyx-LA-1RQ" id="dCe-h9-cZ7"/>
+                        <outlet property="imageFrame" destination="J2w-PR-n1j" id="nmf-Ye-4GZ"/>
+                        <outlet property="soundButton" destination="Ink-8F-SRD" id="fUn-Hi-SOd"/>
+                        <outlet property="soundSlider" destination="Uc0-GC-dev" id="YP2-hE-ws5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Y6z-Wt-0hx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="zwB-ic-zER" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="-551" y="420"/>
         </scene>
     </scenes>
 </document>

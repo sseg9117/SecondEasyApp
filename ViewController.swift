@@ -9,14 +9,21 @@
 import UIKit
 
 class ViewController: UIViewController
-    
     {
+    @IBOutlet weak var imageFrame: UIImageView!
+    @IBOutlet weak var soundSlider: UISlider!
+    @IBOutlet weak var imageButton: UIButton!
+    @IBOutlet weak var soundButton: UIButton!
     @IBOutlet weak var firstButton:UIButton!
     
+    @IBAction func imageButton() -> Void
+    {
+        switchImage()
+    }
     override func viewDidLoad()
     {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+
     }
     
     @IBAction func firstMethod(_ sender: UIButton)
@@ -34,6 +41,8 @@ class ViewController: UIViewController
         firstButton.backgroundColor = createRandomColor()
     }
     
+    @IBAction func soundSlider(_ sender: UISlider) {
+    }
     private func createRandomColor() -> UIColor
     {
         let newColor :UIColor
@@ -44,11 +53,36 @@ class ViewController: UIViewController
         
         return newColor
     }
+    @IBAction func soundButton(_ sender: UIButton) {
+    }
     
+    @IBAction func imageButton(_ sender: UIButton) {
+    }
     override func didReceiveMemoryWarning()
     {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    private func switchImage() -> Void
+    {
+        if (imageCounter > 2)
+        {
+            imageCounter = 0
+        }
+        if (imageCounter == 0)
+        {
+            imageFrame.image = UImage(named: " image 1. ")
+        }
+        else if (imageCounter == 1 )
+        {
+            imageFrame.image = UIImage(named:" image 123 ")
+        }
+        else
+        {
+            imageFrame.image = UIImage(named:" image 3 ")
+        }
+        
+        imageCounter += 1
     }
 }
 
