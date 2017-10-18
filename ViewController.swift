@@ -50,8 +50,8 @@ class ViewController: UIViewController
         
         return newColor
     }
-    @IBAction func soundButton(_ sender: UIButton)
-    {
+
+    @IBAction func soundButton(_ sender: UIButton) {
     }
     @IBAction func changePicture(_ sender: UIButton)
     {
@@ -64,21 +64,21 @@ class ViewController: UIViewController
     }
     private func switchImage() -> Void
     {
-        if (imageCounter > 2)
+        if (imageCounter > 1)
         {
             imageCounter = 0
         }
         if (imageCounter == 0)
         {
-            imageFrame.image = UIImage(named: " lel ")
+            imageFrame.image = UIImage(named: "lel")
         }
         else if (imageCounter == 1 )
         {
-            imageFrame.image = UIImage(named:" image 123 ")
+            imageFrame.image = UIImage(named:"Poke")
         }
         else
         {
-            imageFrame.image = UIImage(named:" image 3 ")
+            imageFrame.image = UIImage(named:"Poke2")
         }
         
         imageCounter += 1
