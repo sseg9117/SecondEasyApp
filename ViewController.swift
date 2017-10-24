@@ -64,7 +64,7 @@ class ViewController: UIViewController
     }
     private func switchImage() -> Void
     {
-        if (imageCounter > 1)
+        if (imageCounter > 2)
         {
             imageCounter = 0
         }

@@ -122,7 +122,7 @@
                                     </stackView>
                                 </subviews>
                             </stackView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="image 3" translatesAutoresizingMaskIntoConstraints="NO" id="J2w-PR-n1j">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Poke2" translatesAutoresizingMaskIntoConstraints="NO" id="J2w-PR-n1j">
                                 <rect key="frame" x="57" y="121" width="261" height="207"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -151,6 +151,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="image 3" width="320" height="199"/>
+        <image name="Poke2" width="320" height="180"/>
     </resources>
 </document>
