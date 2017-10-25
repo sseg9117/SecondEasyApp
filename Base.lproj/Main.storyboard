@@ -44,43 +44,23 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-551" y="-371"/>
+            <point key="canvasLocation" x="-1078" y="-436"/>
         </scene>
         <!--Second Page View Controller-->
         <scene sceneID="ncb-Y1-7Pq">
             <objects>
-                <viewController id="ubO-U0-usf" customClass="SecondPageViewController" customModule="SecondEasyApp" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="1nn-cN-sj6"/>
-                        <viewControllerLayoutGuide type="bottom" id="iod-gG-EBW"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="zIz-Z5-5Wq">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
+                <viewController id="ubO-U0-usf" customClass="SecondPageViewController" customModule="SecondEasyApp" customModuleProvider="target" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="K0f-hM-6dF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="574" y="-372"/>
+            <point key="canvasLocation" x="1130" y="143"/>
         </scene>
         <!--Third View Controller-->
         <scene sceneID="PjL-yz-ryy">
             <objects>
-                <viewController id="DQM-5F-Po2" customClass="ThirdViewController" customModule="SecondEasyApp" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="NRe-Sd-lBV"/>
-                        <viewControllerLayoutGuide type="bottom" id="cDv-8g-QdB"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="uJR-ya-z3v">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
+                <viewController id="DQM-5F-Po2" customClass="ThirdViewController" customModule="SecondEasyApp" customModuleProvider="target" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2kq-KW-W4V" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1016" y="-373"/>
+            <point key="canvasLocation" x="1722" y="-385"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="H5a-S6-Lu2">
@@ -116,7 +96,6 @@
                                                 <state key="normal" title="change Picture"/>
                                                 <connections>
                                                     <action selector="changePicture:" destination="Mx0-Wv-18o" eventType="touchUpInside" id="r4B-Vc-Tdb"/>
-                                                    <segue destination="ubO-U0-usf" kind="show" id="RHe-xn-sFn"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -148,7 +127,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Y6z-Wt-0hx" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="zwB-ic-zER" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="87" y="-372"/>
+            <point key="canvasLocation" x="-394" y="-176"/>
         </scene>
     </scenes>
     <resources>

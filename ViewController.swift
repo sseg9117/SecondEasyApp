@@ -13,7 +13,6 @@ class ViewController: UIViewController
     {
     private var soundPlayer : AVAudioPlayer?
     private var imageCounter : Int = 0
-    private lazy var color : ColorTools = ColorTools()
     
     @IBOutlet weak var imageFrame: UIImageView!
     @IBOutlet weak var soundSlider: UISlider!
@@ -85,7 +84,6 @@ class ViewController: UIViewController
         {
             imageFrame.image = UIImage(named: "images 2")
         }
-        view.backgroundColor = color.createRandomColor();
         imageCounter += 1
     }
 
@@ -140,7 +138,7 @@ private func loadAudioFile() -> Void
     {
         soundSlider.value = Float ((soundPlayer?.currentTime)!)
     }
-    @IBAction func slidingSound(  sender: UISlider)
+    @IBAction func slidingSound(_ sender: UISlider)
     {
         let seekTime = Double (soundSlider.value)
         soundPlayer?.currentTime = seekTime
